@@ -1,0 +1,135 @@
+.local_weather {
+  margin: auto;
+  display: flex;
+  width: 840px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about {
+  display: grid;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-areas:
+          "name name"
+          "icon temp";
+}
+
+.name {
+  grid-area: name;
+}
+
+.button {
+  background-color: darkgrey;
+  border: 1px solid darkgrey;
+  color: lightgrey;
+  border-radius: 6px;
+  width: 200px;
+  height: 40px;
+}
+
+b, .part {
+  font-size: 20pt;
+}
+
+.temp{
+  font-size: 40pt;
+  grid-area: temp;
+}
+
+.icon{
+  grid-area: icon;
+}
+
+
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 0;
+}
+
+li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 27px;
+  margin-bottom: 8px;
+  width: 380px;
+  color: cornsilk;
+  background-color: dimgray;
+}
+
+#main_layout{
+  min-height: 800px;
+  background: #f2ef85;
+}
+
+.container {
+  width: 830px;
+  margin: 30px auto;
+}
+
+.header, .weather_here_item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+
+  justify-content: space-between;
+}
+
+.header {
+  align-items: center;
+  height: 50px;
+}
+
+.weather_here_item {
+  align-items: stretch;
+}
+
+input {
+  height: 30px;
+  width: 250px;
+  padding-left: 20px;
+  background-color: lightgrey;
+  border: none;
+  color: dimgray;
+}
+
+.itemsButton {
+  background-color: dimgray;
+  color: cornsilk;
+  border: 0;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.item-icon {
+  height: 50px;
+}
+
+.loading-icon {
+  margin-top: 30px;
+  width: 50%;
+}
+
+.loader {
+  margin-bottom: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
